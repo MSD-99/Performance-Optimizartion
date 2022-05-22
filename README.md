@@ -1,4 +1,4 @@
-# Performance-Optimizartion
+# Performance-Optimization
 Steepest Descent and Newton's Method
 
 If we have a function f(x) and its derivative df(x), we can find the minimum of f(x) by using the following methods:
