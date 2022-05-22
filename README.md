@@ -2,9 +2,11 @@
 Steepest Descent and Newton's Method
 
 If we have a function f(x) and its derivative df(x), we can find the minimum of f(x) by using the following methods:
+
 $$
 \Rightarrow F_{(x)} = 2x_1^2 + 9x_1x_2 + 6x_2^2 + 8x_1 + 3x_2
 $$
+
 
 $$
 \nabla F_{(x)}=\begin{bmatrix} 
@@ -12,13 +14,11 @@ $$
 	\\
 	\dfrac{\partial } {\partial x_2}  F_{(x)} \\
 	\end{bmatrix}
-
 	=\begin{bmatrix} 
 	4x_1 + 9x_2 + 8 \\
 	\\
 	12x_2 + 9x_1 + 3 \\
 	\end{bmatrix}
-
 $$
 
 $$
@@ -27,7 +27,6 @@ A = \nabla^2 F_{(x)}=\begin{bmatrix}
 	\\
 	\dfrac{\partial } {\partial x_2x_1} F_{(x)} & \dfrac{\partial } {\partial x_2^2} F_{(x)}\\
 	\end{bmatrix}
-
 	=\begin{bmatrix} 
 	4 & 9\\ 
 	\\
