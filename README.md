@@ -34,6 +34,31 @@ A = \nabla^2 F_{(x)}=\begin{bmatrix}
 	\end{bmatrix}
 $$
 
+So the eigenvalues of A are:
+$$
+\lambda \approx \begin{bmatrix} 
+    -1.85 & 17.85
+    \end{bmatrix}
+$$
+$$
+v\approx \begin{bmatrix} 
+    -0.84 & -0.54\\
+    0.54 & -0.84
+    \end{bmatrix}
+$$
+$$
+\lambda_1\lambda_2 <0
+$$
+
+
+$\Rightarrow$ We have Saddle-point
+
+
+![This is an image](img/FunctionContour.png)
+
+![This is an image](img/funcSurface.png)
+
+![This is an image](img/funcSurface2.png)
 
 
 ## Steepest Descent Method
@@ -61,8 +86,24 @@ $$
 \alpha_k = \frac{\nabla F_{(x_k)}^T \nabla F_{(x_k)}}{\nabla F_{(x_k)}^T A \nabla F_{(x_k)}}
 $$
 
+---
+#### Steepest Descent Optimization with eps $10^{-5}$ and max_iter 2
+---
 
-## Newton's Method
+![This is an image](img/SP_2.png)
+![This is an image](img/SP_2_p.png)
+![This is an image](img/SP_2_alpha.png)
+![This is an image](img/SP_2_X1X2.png)
+
+---
+#### Steepest Descent Optimization with eps $10^{-18}$ and max_iter 1000
+---
+![This is an image](img/SP_1000.png)
+![This is an image](img/SP_1000_p.png)
+![This is an image](img/SP1000_X1x2.png)
+![This is an image](img/SP_1000_alpha.png)
+
+# Newton's Method
 
 $$
 x_{k+1} = x_k - A_k^{-1} \nabla F_{(x_k)}
@@ -95,8 +136,17 @@ $$
     +0.3 \\
     \end{bmatrix}
 $$
+---
+#### Newton's Optimization with eps $10^{-5}$ and max_iter 2
+---
+![This is an image](img/N_2.png)
+![This is an image](img/N_2_X1X2.png)
 
-
+---
+#### Newton's Optimization with eps $10^{-18}$ and max_iter 1000
+---
+![This is an image](img/N_1000.png)
+![This is an image](img/N_1000_X1X2.png)
 
 ## Thereupon:
 By setting up the accuracy (epsilon) to be $eps=10^{-5}$ and the maximum number of iterations to be $2$, we can get the following result:
