@@ -35,6 +35,7 @@ A = \nabla^2 F_{(x)}=\begin{bmatrix}
 $$
 
 So the eigenvalues of A are:
+
 $$
 \lambda \approx \begin{bmatrix} 
     -1.85 & 17.85
@@ -46,6 +47,7 @@ v\approx \begin{bmatrix}
     0.54 & -0.84
     \end{bmatrix}
 $$
+
 $$
 \lambda_1\lambda_2 <0
 $$
@@ -87,20 +89,26 @@ $$
 $$
 
 ---
-#### Steepest Descent Optimization with eps $10^{-5}$ and max_iter 2
+#### Steepest Descent Optimization with eps 1e-5 and max_iter = 2
 ---
 
 ![This is an image](img/SP_2.png)
+
 ![This is an image](img/SP_2_p.png)
+
 ![This is an image](img/SP_2_alpha.png)
+
 ![This is an image](img/SP_2_X1X2.png)
 
 ---
-#### Steepest Descent Optimization with eps $10^{-18}$ and max_iter 1000
+#### Steepest Descent Optimization with eps = 1e-18 and max_iter = 1000
 ---
 ![This is an image](img/SP_1000.png)
+
 ![This is an image](img/SP_1000_p.png)
+
 ![This is an image](img/SP1000_X1x2.png)
+
 ![This is an image](img/SP_1000_alpha.png)
 
 # Newton's Method
@@ -136,16 +144,20 @@ $$
     +0.3 \\
     \end{bmatrix}
 $$
+
 ---
-#### Newton's Optimization with eps $10^{-5}$ and max_iter 2
+#### Newton's Optimization with eps = 1e-5 and max_iter = 2
 ---
+
 ![This is an image](img/N_2.png)
+
 ![This is an image](img/N_2_X1X2.png)
 
 ---
-#### Newton's Optimization with eps $10^{-18}$ and max_iter 1000
+#### Newton's Optimization with eps = 1e-18 and max_iter = 1000
 ---
 ![This is an image](img/N_1000.png)
+
 ![This is an image](img/N_1000_X1X2.png)
 
 ## Thereupon:
