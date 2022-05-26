@@ -1,14 +1,11 @@
-# Performance-Optimization
+# **Performance-Optimization**
 Steepest Descent and Newton's Method
 
 If we have a function f(x) and its derivative df(x), we can find the minimum of f(x) by using the following methods:
 
-$$
-\Rightarrow F_{(x)} = 2x_1^2 + 9x_1x_2 + 6x_2^2 + 8x_1 + 3x_2
-$$
+$$\Rightarrow F_{(x)} = 2x_1^2 + 9x_1x_2 + 6x_2^2 + 8x_1 + 3x_2$$
 
-$$
-\nabla F_{(x)}=\begin{bmatrix} 
+$$\nabla F_{(x)}=\begin{bmatrix} 
 	\dfrac{\partial } {\partial x_1}  F_{(x)} \\
 	\\
 	\dfrac{\partial } {\partial x_2}  F_{(x)} \\
@@ -17,11 +14,8 @@ $$
 	4x_1 + 9x_2 + 8 \\
 	\\
 	12x_2 + 9x_1 + 3 \\
-	\end{bmatrix}
-$$
-
-$$
-A = \nabla^2 F_{(x)}=\begin{bmatrix} 
+	\end{bmatrix}$$
+$$A = \nabla^2 F_{(x)}=\begin{bmatrix} 
 	\dfrac{\partial } {\partial x_1^2} F_{(x)} & \dfrac{\partial } {\partial x_1x_2} F_{(x)}\\ 
 	\\
 	\dfrac{\partial } {\partial x_2x_1} F_{(x)} & \dfrac{\partial } {\partial x_2^2} F_{(x)}\\
@@ -30,26 +24,19 @@ A = \nabla^2 F_{(x)}=\begin{bmatrix}
 	4 & 9\\ 
 	\\
 	9 & 12\\
-	\end{bmatrix}
-$$
+	\end{bmatrix}$$
 
 So the eigenvalues of A are:
 
-$$
-\lambda \approx \begin{bmatrix} 
+$$\lambda \approx \begin{bmatrix} 
     -1.85 & 17.85
-    \end{bmatrix}
-$$
-$$
-v\approx \begin{bmatrix} 
+    \end{bmatrix}$$
+$$v\approx \begin{bmatrix} 
     -0.84 & -0.54\\
     0.54 & -0.84
-    \end{bmatrix}
-$$
+    \end{bmatrix}$$
 
-$$
-\lambda_1\lambda_2 <0
-$$
+$$\lambda_1\lambda_2 <0$$
 
 
 $\Rightarrow$ We have Saddle-point
@@ -64,28 +51,18 @@ $\Rightarrow$ We have Saddle-point
 
 ## Steepest Descent Method
 
-$$
-{x_{k+1}} = x_k - \alpha \nabla F_{(x_k)}
-$$
-
-$$
-x_0 = \begin{bmatrix} 
+$${x_{k+1}} = x_k - \alpha \nabla F_{(x_k)}$$
+$$x_0 = \begin{bmatrix} 
     -0.1 e \\
     +0.1 e \\
-    \end{bmatrix}
-$$
-
-$$
-\Rightarrow x_0 = \begin{bmatrix} 
+    \end{bmatrix}$$
+$$\Rightarrow x_0 = \begin{bmatrix} 
     -0.3 \\
     +0.3 \\
-    \end{bmatrix}
-$$
+    \end{bmatrix}$$
 
 #### Minimize Along the Line
-$$
-\alpha_k = \frac{\nabla F_{(x_k)}^T \nabla F_{(x_k)}}{\nabla F_{(x_k)}^T A \nabla F_{(x_k)}}
-$$
+$$\alpha_k = \frac{\nabla F_{(x_k)}^T \nabla F_{(x_k)}}{\nabla F_{(x_k)}^T A \nabla F_{(x_k)}}$$
 
 ---
 #### Steepest Descent Optimization with eps 1e-5 and max_iter = 2
@@ -112,12 +89,8 @@ $$
 
 # Newton's Method
 
-$$
-x_{k+1} = x_k - A_k^{-1} \nabla F_{(x_k)}
-$$
-
-$$
-A_k = \nabla^2 F_{(x_k)} = \begin{bmatrix} 
+$$x_{k+1} = x_k - A_k^{-1} \nabla F_{(x_k)}$$
+$$A_k = \nabla^2 F_{(x_k)} = \begin{bmatrix} 
     \dfrac{\partial } {\partial x_1^2} F_{(x_k)} & \dfrac{\partial } {\partial x_1x_2} F_{(x_k)}\\ 
     \\
     \dfrac{\partial } {\partial x_2x_1} F_{(x_k)} & \dfrac{\partial } {\partial x_2^2} F_{(x_k)}\\
@@ -126,23 +99,15 @@ A_k = \nabla^2 F_{(x_k)} = \begin{bmatrix}
     4 & 9\\
     \\
     9 & 12\\
-    \end{bmatrix}
-$$
-
-
-$$
-x_0 = \begin{bmatrix} 
+    \end{bmatrix}$$
+$$x_0 = \begin{bmatrix} 
     -0.1 e \\
     +0.1 e \\
-    \end{bmatrix}
-$$
-
-$$
+    \end{bmatrix}$$$$
 \Rightarrow x_0 = \begin{bmatrix} 
     -0.3 \\
     +0.3 \\
-    \end{bmatrix}
-$$
+    \end{bmatrix}$$
 
 ---
 #### Newton's Optimization with eps = 1e-5 and max_iter = 2
