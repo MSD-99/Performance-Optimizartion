@@ -7,7 +7,6 @@ $$
 \Rightarrow F_{(x)} = 2x_1^2 + 9x_1x_2 + 6x_2^2 + 8x_1 + 3x_2
 $$
 
-
 $$
 \nabla F_{(x)}=\begin{bmatrix} 
 	\dfrac{\partial } {\partial x_1}  F_{(x)} \\
